@@ -23,6 +23,7 @@ public class TopKFrequentElements {
 		// each row depends on the user.
 		// temp[i].size() will give the size of the
 		// i'th row
+		@SuppressWarnings("unchecked")
 		ArrayList<Integer>[] temp = new ArrayList[max + 1];
 		for (int i : map.keySet()) {
 			int freq = map.get(i);
