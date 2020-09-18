@@ -1,12 +1,12 @@
 import java.util.HashMap;
 import java.util.TreeSet;
-
+//Adding an extra line and commenting 1 line for git test 
 public class AvoidFloodInCity {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//int[] rains = { 1, 0, 3, 0, 1, 3 };
-		int[] rains = {69,0,0,0,69};
+		int[] rains = { 1, 0, 3, 0, 1, 3 };
+		//int[] rains = {69,0,0,0,69};
 		int n = rains.length;
 		int[] res = new int[n];
 		Integer dryday;
