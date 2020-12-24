@@ -4,10 +4,10 @@ public class IsomorphicStrings {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		String s = "paper";
-//		String t = "title";
-		 String s = "ab";
-		 String t = "aa";
+		String s = "paper";
+		String t = "title";
+//		 String s = "ab";
+//		 String t = "aa";
 
 		int n = s.length();
 		System.out.println(n);

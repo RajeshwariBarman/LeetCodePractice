@@ -3,7 +3,7 @@ public class ConsecutiveCharacters {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s = "abbcccddddeeeeedcba";
+		String s = "aaaaaaaaabbcccddddeeeeedcba";
 		char[] c = s.toCharArray();
 		int count = 0;
 		int max = 0;
@@ -11,11 +11,13 @@ public class ConsecutiveCharacters {
 		for (int i = 0; i < n - 1; i++) {
 			if (c[i] == c[i + 1])
 				count++;
-			else
-				count = 0;
-			max = Math.max(max, count);
+			else {
+				max = Math.max(max, count);
+				count = 0;				
+			}
+
 		}
-		System.out.println(max+1);
+		System.out.println(max + 1);
 
 	}
 

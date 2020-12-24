@@ -13,7 +13,12 @@ public class IncreasingTripletSubsequence {
 			else if (nums[i] <= second)
 				second = nums[i];
 			else
+			{
 				System.out.println("True");
+				System.out.println(first);
+				System.out.println(second);
+			}
+				
 		}
 
 		// TODO Auto-generated method stub

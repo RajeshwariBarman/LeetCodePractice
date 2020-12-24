@@ -6,13 +6,13 @@ public class FindAllAnagramsinaString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// String s = "cbaebabacd";
-		// String p = "abc";
+		 String s = "cbaebabacd";
+		 String p = "abc";
 		//sliding window - https://www.geeksforgeeks.org/compare-two-arrays-java/
 		
-		String s = "baa";
-		String p = "aa";
-		List<Integer> res = new ArrayList<Integer>();
+		//String s = "baa";
+		//String p = "aa";
+		ArrayList<Integer> res = new ArrayList<Integer>();
 		int n = s.length();
 		int pattern = p.length();
 		if(pattern > n )
@@ -25,8 +25,8 @@ public class FindAllAnagramsinaString {
 			ch = p.charAt(i);
 			pmap[ch - 'a']++;
 			map[s.charAt(i) - 'a']++;
-
 		}
+
 		if (Arrays.equals(map, pmap))
 			res.add(startwindow);
 
@@ -37,7 +37,6 @@ public class FindAllAnagramsinaString {
 			startwindow++;
 			if (Arrays.equals(map, pmap))
 				res.add(startwindow);
-
 		}
 
 		System.out.println(res);
